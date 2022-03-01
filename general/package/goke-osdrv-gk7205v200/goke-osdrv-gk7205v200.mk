@@ -10,7 +10,6 @@ GOKE_OSDRV_GK7205V200_LICENSE = MIT
 GOKE_OSDRV_GK7205V200_LICENSE_FILES = LICENSE
 GOKE_OSDRV_GK7205V200_INSTALL_STAGING = YES
 
-
 define GOKE_OSDRV_GK7205V200_INSTALL_STAGING_CMDS
 	$(INSTALL) -m 755 -d $(STAGING_DIR)/usr/include/goke
 	#$(INSTALL) -m 644 -t $(STAGING_DIR)/usr/include/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/include/*
@@ -24,7 +23,6 @@ define GOKE_OSDRV_GK7205V200_INSTALL_STAGING_CMDS
 	## $(INSTALL) -m 755 -d $(BUILD_DIR)/goke-osdrv-gk7205v200/lib
 	## $(INSTALL) -m 644 -t $(BUILD_DIR)/goke-osdrv-gk7205v200/lib $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/lib/*.so
 endef
-
 
 define GOKE_OSDRV_GK7205V200_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 755 -d $(TARGET_DIR)/etc/init.d
@@ -56,7 +54,7 @@ define GOKE_OSDRV_GK7205V200_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_rc.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_rgn.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_sys.ko
-	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_tde.ko
+	## $(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_tde.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_vedu.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_venc.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_vgs.ko
@@ -65,7 +63,7 @@ define GOKE_OSDRV_GK7205V200_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_vpss.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/gk7205v200_wdt.ko
 	## $(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/isp_piris.ko
-	## $(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/isp_pwm.ko
+	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/isp_pwm.ko
 	## $(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/isp_sample_ist.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/isp_sensor_i2c.ko
 	$(INSTALL) -m 644 -t $(TARGET_DIR)/lib/modules/4.9.37/goke $(BR2_EXTERNAL_GOKE_PATH)/package/goke-osdrv-gk7205v200/files/kmod/isp_sensor_spi.ko

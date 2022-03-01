@@ -1,4 +1,5 @@
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/linux/linux-ext-grainmedia_patcher.mk
+include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/grainmedia-osdrv-gm8136/grainmedia-osdrv-gm8136.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/grainmedia_patcher/grainmedia_patcher.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/aura-httpd/aura-httpd.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/fdk-aac-openipc/fdk-aac-openipc.mk
@@ -11,9 +12,10 @@ include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/libevent-openipc/libevent-openip
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/libhv-openipc/libhv-openipc.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/libogg-openipc/libogg-openipc.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/libsrt-openipc/libsrt-openipc.mk
+include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/libwebsockets-openipc/libwebsockets-openipc.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/linux-firmware-openipc/linux-firmware-openipc.mk
-include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/majestic-fonts/majestic-fonts.mk
-include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/majestic/majestic.mk
+#include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/majestic-fonts/majestic-fonts.mk
+#include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/majestic/majestic.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/mbedtls-openipc/mbedtls-openipc.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/microbe-web/microbe-web.mk
 include $(BR2_EXTERNAL_GRAINMEDIA_PATH)/package/motors/motors.mk

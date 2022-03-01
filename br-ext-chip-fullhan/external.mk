@@ -1,4 +1,6 @@
 include $(BR2_EXTERNAL_FULLHAN_PATH)/linux/linux-ext-fullhan_patcher.mk
+include $(BR2_EXTERNAL_FULLHAN_PATH)/package/fullhan-osdrv-fh8852v100/fullhan-osdrv-fh8852v100.mk
+include $(BR2_EXTERNAL_FULLHAN_PATH)/package/fullhan-osdrv-fh8852v200/fullhan-osdrv-fh8852v200.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/fullhan_patcher/fullhan_patcher.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/aura-httpd/aura-httpd.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/fdk-aac-openipc/fdk-aac-openipc.mk
@@ -11,9 +13,10 @@ include $(BR2_EXTERNAL_FULLHAN_PATH)/package/libevent-openipc/libevent-openipc.m
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/libhv-openipc/libhv-openipc.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/libogg-openipc/libogg-openipc.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/libsrt-openipc/libsrt-openipc.mk
+include $(BR2_EXTERNAL_FULLHAN_PATH)/package/libwebsockets-openipc/libwebsockets-openipc.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/linux-firmware-openipc/linux-firmware-openipc.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/majestic-fonts/majestic-fonts.mk
-include $(BR2_EXTERNAL_FULLHAN_PATH)/package/majestic/majestic.mk
+# include $(BR2_EXTERNAL_FULLHAN_PATH)/package/majestic/majestic.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/mbedtls-openipc/mbedtls-openipc.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/microbe-web/microbe-web.mk
 include $(BR2_EXTERNAL_FULLHAN_PATH)/package/motors/motors.mk
